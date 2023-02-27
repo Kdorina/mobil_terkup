@@ -28,6 +28,10 @@ export default function App() {
       <TouchableHighlight style={styles.calcBtn} onPress={calcVolume}>
       <Text style={styles.titleBtn}>Számít</Text>
       </TouchableHighlight>
+
+      <Text>Eredmény</Text>
+      <TextInput style={styles.inputField}></TextInput>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -49,7 +53,7 @@ const styles = StyleSheet.create({
   },
 
   titles: {
- 
+   margin:20
   },
 
   inputField:{
@@ -64,6 +68,7 @@ const styles = StyleSheet.create({
 
   calcBtn:{
     margin: 5,
+    marginBottom: 20,
     backgroundColor:"#D7FF46",
     borderRadius: 120,
     padding: 10,
